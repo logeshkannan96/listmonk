@@ -47,6 +47,9 @@ services:
       - db
     volumes:
       - ./config.toml:/listmonk/config.toml
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
 
   demo-db:
     container_name: listmonk_demo_db
